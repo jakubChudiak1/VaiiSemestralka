@@ -2,6 +2,68 @@
     margin: 0;
     padding: 0;
 }
+body{
+background-color: #212529;
+}
+#header{
+    padding: 5px;
+    position: absolute;
+    right: 0;
+
+    left: 0;
+    z-index: 100;
+    line-height: 40px;
+    height: 70px;
+    min-height: 60px;
+}
+.menu{
+    display: flex;
+
+}
+.logo{
+    padding: 5px;
+}
+.menu-options {
+    margin-left: 60%;
+    padding: 5px;
+}
+.menu-options a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #dee2e6;
+    transition: 0.5s ease;
+}
+.menu-options a:hover{
+    transition: 0.5s ease;
+    color: #d63384;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     position: absolute;
     bottom: 0;
@@ -12,6 +74,5 @@ footer{
     background-color: #003b6f;
 
 }
-p{
-    text-align: center;
-}
+
+

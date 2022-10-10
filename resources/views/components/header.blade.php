@@ -1,23 +1,21 @@
-<header>
-    <div class="navbar hlavne-menu">
-        <div  class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="logo">
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="menu-item">
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Login</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="menu">
+                    <img src="images/logo.png" alt="" class="logo">
 
+                    <div class="menu-options">
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                        <a href="">Login</a>
+                    </div>
+
+                </div>
+
+
+            </div>
         </div>
+
     </div>
 </header>

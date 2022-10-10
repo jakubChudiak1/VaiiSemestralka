@@ -37,6 +37,53 @@ background-color: #212529;
     transition: 0.5s ease;
     color: #d63384;
 }
+.home-banner{
+    background-image: url("./images/banner-bg.jpg");
+    padding: 160px 60px;
+    margin-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 24px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+}
+.banner-content{
+    color: white;
+    text-align: left;
+    line-height: 40px;
+
+}
+.banner-content h1{
+    font-weight: 700;
+    font-size: 62px;
+}
+.banner-content p{
+    padding-top: 18px;
+    font-size: 20px;
+}
+
+.banner-content button{
+    width: 160px;
+    border: none;
+    background-color: #d63384;
+    color: white;
+    border-radius: 24px;
+    transition: 0.5s ease;
+    margin-top: 15px;
+}
+.banner-content button:hover{
+    color: #d63384;
+    background-color: #dee2e6;
+    transition: 0.5s ease;
+}
+.banner-content span{
+    color: #d63384;
+}
 
 
 

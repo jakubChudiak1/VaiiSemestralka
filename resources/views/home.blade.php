@@ -26,7 +26,13 @@
 <section id="game-list">
 
     <div class="container-fluid">
-
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="favourite-game">
+                    <h1>Obľúbené <span>hry</span> </h1>
+                </div>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-lg-4 col-sm-6">
                 <div class=" game-item">
@@ -56,14 +62,35 @@
                 </div>
             </div>
         </div>
-
 </div>
+</section>
+
+
+<section id="reviews">
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="reviews-header">
+                <h1>Tu Možete Napísať <span>Recenziu</span> na Hru</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="review-form">
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
 
 </section>
-
-
 
 
 

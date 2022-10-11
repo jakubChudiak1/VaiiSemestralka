@@ -83,7 +83,20 @@ background-color: #212529;
     padding: 5%;
     border-radius: 20px;
 }
+.favourite-game{
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
 
+}
+.favourite-game h1{
+    font-weight: 800;
+    font-size: 48px;
+    padding-bottom: 2%;
+}
+.favourite-game span{
+    color: #d63384;
+}
 .game-item{
     padding: 2%;
     background-color: #495057;
@@ -112,7 +125,26 @@ background-color: #212529;
     transform: scale(1.02);
     transition: 0.5s ease;
 }
+#reviews{
+    margin-top: 5%;
+    background-color: #27292a;
+    border-radius: 20px;
+    padding: 5%;
+}
+.reviews-header{
+    color: white;
 
+    font-style: italic;
+
+}
+.reviews-header h1{
+    font-size: 42px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.reviews-header span{
+    color: #d63384;
+}
 
 
 

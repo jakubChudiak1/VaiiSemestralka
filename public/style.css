@@ -269,12 +269,12 @@ footer{
 }
 #registration{
     margin-top: 8%;
-    margin-bottom: 8%;
+
     background-image: url("./images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    opacity: 5;
+
 }
 .registration-header{
 
@@ -290,11 +290,12 @@ footer{
 .registration-form{
     text-align: center;
 }
-.registration-content{
+.registration-content {
     background-color: #27292a;
     opacity: 5;
-    padding: 15px;
+    padding: 20px;
     border-radius: 20px;
+    background-color: rgba(0,0,0,.5);
 }
 .registration-form input{
     display: block;

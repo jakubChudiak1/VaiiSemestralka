@@ -1,5 +1,6 @@
 @extends('layout.index')
 @section('Content')
+<div class="container">
 <section id="home">
 <div class="row">
     <div class="col-lg-12">
@@ -76,12 +77,33 @@
     </div>
 
     <div class="col-lg-12">
-        <div class="row">
             <div class="review-form">
+                <form action="" method="">
+                    <div class="form-group">
+                        <label for="name">Vaše Meno</label>
+                        <input type="text" class="form-control" id="name" placeholder="Jakub" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="surname">Vaše Priezvisko</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Chudiak" required>
+                      </div>
+                    <div class="form-group">
+                      <label for="mail">Váš Email</label>
+                      <input type="email" class="form-control" id="mail" placeholder="name@example.com" required>
+                    </div>
 
+                    <div class="form-group">
+                      <label for="recenzia">Example textarea</label>
+                      <textarea class="form-control" id="recenzia" rows="6" required></textarea>
+                    </div>
+                    <button class="send-review">
+                        Send
+                    </button>
+
+                  </form>
 
             </div>
-        </div>
+
     </div>
 
 
@@ -92,7 +114,7 @@
 
 </section>
 
-
+</div>
 
 
 

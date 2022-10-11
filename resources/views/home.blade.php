@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="form-group">
-                      <label for="recenzia">Example textarea</label>
+                      <label for="recenzia">Vaša recenzia</label>
                       <textarea class="form-control" id="recenzia" rows="6" required></textarea>
                     </div>
                     <button class="send-review">

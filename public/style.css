@@ -267,3 +267,49 @@ footer{
     transition: 0.5s ease;
     font-weight: 600;
 }
+#registration{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 5;
+}
+.registration-header{
+
+    text-align: center;
+    padding-bottom: 4%;
+}
+.registration-header h1{
+    font-weight: 800;
+    color: #d63384;
+    font-style: italic;
+    font-size: 52px;
+}
+.registration-form{
+    text-align: center;
+}
+.registration-content{
+    background-color: #27292a;
+    opacity: 5;
+    padding: 15px;
+    border-radius: 20px;
+}
+.registration-form input{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 5px;
+    border-radius: 12px;
+}
+.registration-form button{
+    text-align: center;
+    margin-top: 2%;
+    background-color: #d63384;
+    border-radius: 18px;
+    color: white;
+    width: 190px;
+    margin-bottom: 10%;
+    padding: 5px;
+}

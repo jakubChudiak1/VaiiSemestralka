@@ -8,7 +8,7 @@
                 <h1>Registrácia</h1>
             </div>
             <div class="registration-form">
-                <form action="">
+                <form >
                     <label for="mail">Váš Mail</label>
                     <input type="email" id="mail" placeholder="example@gmail.com">
                     <label for="pass">Vaše heslo</label>

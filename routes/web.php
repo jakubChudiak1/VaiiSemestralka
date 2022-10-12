@@ -23,3 +23,6 @@ Route::get('/login',function(){
 Route::get("/registration",function(){
     return view("registration");
 });
+Route::get('/zoznam',function(){
+    return view("zoznam");
+});

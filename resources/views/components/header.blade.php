@@ -11,7 +11,7 @@
               <a class="nav-link" href="/">Domov</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Details</a>
+              <a class="nav-link" href="zoznam">Zoznam</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login">Login</a>

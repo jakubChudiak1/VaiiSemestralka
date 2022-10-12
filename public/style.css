@@ -268,7 +268,6 @@ footer{
     font-weight: 600;
 }
 #registration{
-    margin-top: 8%;
 
     background-image: url("./images/background.jpg");
     background-size: cover;
@@ -279,7 +278,7 @@ footer{
 .registration-header{
 
     text-align: center;
-    padding-bottom: 4%;
+    padding-bottom: 11%;
 }
 .registration-header h1{
     font-weight: 800;
@@ -314,3 +313,36 @@ footer{
     margin-bottom: 10%;
     padding: 5px;
 }
+#games-table{
+    margin-top: 5%;
+
+}
+.game-table-content{
+    background-color: #27292a;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+.game-table-header{
+    padding-bottom: 2%;
+
+}
+.game-table-header h1{
+    color: white;
+    font-style: italic;
+    font-size: 52px;
+    font-weight: 800;
+}
+.game-table-header span{
+    color: #d63384;
+}
+
+
+
+
+
+
+
+
+
+

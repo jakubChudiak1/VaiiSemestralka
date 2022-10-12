@@ -7,7 +7,7 @@
     </div>
 <div class="login-content">
     <div class="col-lg-12">
-        <form action="">
+        <form >
             <label for="email">Váš Mail</label>
             <input type="email" placeholder="example@gmail.com" id="email" required>
             <label for="password">Vaše heslo</label>

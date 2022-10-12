@@ -78,7 +78,7 @@
 
     <div class="col-lg-12">
             <div class="review-form">
-                <form action="" method="">
+                <form >
                     <div class="form-group">
                         <label for="name">Vaše Meno</label>
                         <input type="text" class="form-control" id="name" placeholder="Jakub" required>

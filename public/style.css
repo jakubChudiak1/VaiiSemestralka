@@ -336,11 +336,34 @@ footer{
 .game-table-header span{
     color: #d63384;
 }
+table{
+    color: white;
+}
+th{
+    color: white;
 
+}
+td{
+    color: white;
+    margin-top: 2%;
+}
+tr{
+    transition: 0.5s ease;
+}
+td img{
+    max-width: 100%;
+    height: auto;
 
-
-
-
+   border-radius: 20px;
+}
+td p{
+    text-align: center;
+    font-weight: 700;
+}
+tr:hover{
+    background-color: #d63384;
+    transition: 0.5s ease;
+}
 
 
 

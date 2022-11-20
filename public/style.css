@@ -400,5 +400,7 @@ tr:hover{
 }
 #sprava{
     color: white;
+    position: relative;
     z-index: 100;
+    display: none;
 }

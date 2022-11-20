@@ -8,15 +8,17 @@
                 <h1>Registrácia</h1>
             </div>
             <div class="registration-form">
-                <form onclick="strenght()" >
+                <form  >
                     <label for="mail">Váš Mail</label>
                     <input type="email" id="mail" placeholder="example@gmail.com">
                     <label for="pass">Vaše heslo</label>
                     <input type="password" placeholder="Heslo" id="pass">
-                    <p id="sprava"> <span id="sila"></span> </p>
+                    <p id="sprava"> Heslo je:<span id="sila"></span> </p>
+
+
                     <label for="pass-conf">Potvrďte heslo</label>
                     <input type="password" id="pass-conf" placeholder="heslo">
-                    <button id="regist">Vytvorte účet</button>
+                    <button id="regist" type="submit">Vytvorte účet</button>
                 </form>
             </div>
         </div>
@@ -25,37 +27,33 @@
 
 </div>
 <script>
-    function strenght(){
-    const pass = document.getElementById('pass');
-    const msg = document.getElementById('sprava');
-    const sil = document.getElementById('sila');
-    const btn = document.getElementById('regist');
-    pass.addEventListener('click', ()=> {
-        if (pass.value.length >0){
+    var passs = document.getElementById('pass');
+    var msg = document.getElementById('sprava');
+    var sil = document.getElementById('sila');
+
+    passs.addEventListener('input', () => {
+        if (passs.value.length > 0){
             msg.style.display = "block";
+            
         }
         else{
+            sila.style.color ="yellow";
             msg.style.display = "none";
-            btn.style.display = "none";
+           
         }
-        if(sil.value.length < 5){
-            msg.innerHTML = "SLABÉ";
-            btn.style.display = "none";
+        if(passs.value.length < 5){
+            sil.innerHTML = "SLABÉ";
+            msg.style.color ="red";
         }
-        else if(sil.value.length >10){
-            msg.innerHTML = "SILNÉ";
-            btn.style.display = "block";
+        else if(passs.value.length <10 && passs.value.length >5){
+            sil.innerHTML = "STREDNÉ";
+            msg.style.color ="yellow";
         }
-
-
-
-    }
-
-    }
-
-
-
-
+        else if(passs.value.length >10){
+            sil.innerHTML = "SILNÉ";
+            msg.style.color ="green";
+        }
+    })
 </script>
 </section>
 @endsection

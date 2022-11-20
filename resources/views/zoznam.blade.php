@@ -19,39 +19,25 @@
                           <th scope="col">Názov</th>
                           <th scope="col">Dátum vydania</th>
                           <th scope="col">Počet Stiahnutí</th>
+                          <th scope="col">Edit</th>
+                          <th scope="col">Delete</th>
                         </tr>
                       </thead>
                       <tbody>
+                        @foreach ($games as $item)
                         <tr>
-                           <td><img src="{{ asset("images/hearthstonel.png") }}" alt=""></td>
-                          <td><p>Hearthstone</p> </td>
-                          <td><p>11.03.2014</p> </td>
-                          <td><p>300 mil.</p> </td>
+                           <td><img src="{{ asset('uploads/zoznam/'.$item->image) }}"   alt="image"></td>
+                          <td><p>{{$item->name}}</p> </td>
+                          <td><p>{{$item->date}}</p> </td>
+                          <td><p>{{$item->count}}</p> </td>
+                           <td><button style="width: 100%" type="submit" class="send-review">
+                            <a href="{{url('edit'.$item->id)}}">Edit</a>  
+                        </button></td>
+                        <td><button   style="width: 100%"  type="submit" class="send-review">
+                       <a href="{{url('delete'.$item->id)}}">Delete</a>   
+                      </button></td>
                         </tr>
-                        <tr>
-                            <td><img src="{{ asset("images/lol.png") }}" alt=""></td>
-                           <td><p>LoL</p> </td>
-                           <td><p>01.01.2009</p> </td>
-                           <td><p>1.9 mil.</p> </td>
-                         </tr>
-                         <tr>
-                            <td><img src="{{ asset("images/dota2_social.png") }}" alt=""></td>
-                           <td><p>Dota2</p> </td>
-                           <td><p>02.03.2008</p> </td>
-                           <td><p>800 mil.</p> </td>
-                         </tr>
-                         <tr>
-                            <td><img src="{{ asset("images/apex.png") }}" alt=""></td>
-                           <td><p>Apex</p> </td>
-                           <td><p>11.06.2018</p> </td>
-                           <td><p>120 mil.</p> </td>
-                         </tr>
-                         <tr>
-                            <td><img src="{{ asset("images/roblox.png") }}" alt=""></td>
-                           <td><p>Roblox</p> </td>
-                           <td><p>02.05.2006</p> </td>
-                           <td><p>30 mil.</p> </td>
-                         </tr>
+                        @endforeach
                       </tbody>
 
 

@@ -108,6 +108,7 @@ background-color: #212529;
     padding: 2%;
     background-color: #495057;
     border-radius: 15px;
+    cursor: pointer;
 
 }
 .game-item h1{
@@ -386,4 +387,18 @@ tr:hover{
 .add_games{
     margin-bottom: 11%;
 }
-
+.edit-header{
+    margin-top: 5%;
+    
+}
+.send-review a{
+    text-decoration: none;
+    color: white;
+}
+.send-review a:hover{
+    color: #d63384;
+}
+.edit{
+    
+    
+}

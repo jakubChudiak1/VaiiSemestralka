@@ -31,3 +31,6 @@ Route::get("/registration",function(){
 Route::get('zoznam',[ZoznamController::class,'index']);
 Route::get('addGame',[ZoznamController::class,'create']);
 Route::post('addGame',[ZoznamController::class,'store']);
+Route::get('edit{id}',[ZoznamController::class,'edit']);
+Route::put('edit{id}',[ZoznamController::class,'update']);
+Route::get('delete{id}',[ZoznamController::class,'delete']);

@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label for="picture">Počet hráčov</label>
-                <input type="file" class="form-control" id="picture" name="pic" accept="image/*" >
+                <input type="file" class="form-control" id="picture" name="pic" accept="image/*" required>
               </div>
             
             <button type="submit" class="send-review">

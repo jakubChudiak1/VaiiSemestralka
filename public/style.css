@@ -398,7 +398,7 @@ tr:hover{
 .send-review a:hover{
     color: #d63384;
 }
-.edit{
-    
-    
+#sprava{
+    color: white;
+    z-index: 100;
 }

@@ -38,8 +38,8 @@
             <div class="col-lg-4 col-sm-6">
                 <div class=" game-item">
                     <h1>Dota 2</h1>
-                    <img src="{{ asset("images/game-01.jpg") }}" alt="">
-                    <div class="game-content">
+                    <img class="gameImg"  src="{{ asset("images/game-01.jpg") }}" alt="">
+                    <div class="game-content hidden">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet minus quia eius non. Ratione optio quo veniam placeat ipsum! Placeat quisquam tempora ipsum officia dolores. A nam expedita maxime id.
                     </div>
                 </div>
@@ -47,8 +47,8 @@
             <div class="col-lg-4 col-sm-6">
                 <div class=" game-item">
                     <h1>Rust</h1>
-                    <img src="{{ asset("images/game-02.jpg") }}" alt="">
-                    <div class="game-content">
+                    <img class="gameImg"  src="{{ asset("images/game-02.jpg") }}" alt="">
+                    <div class="game-content hidden">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia deserunt voluptate animi, provident dolores harum. Similique placeat quidem distinctio illum modi asperiores perferendis animi aut,
                     </div>
                 </div>
@@ -56,8 +56,8 @@
             <div class="col-lg-4 col-sm-6">
                 <div class=" game-item">
                     <h1>Minecraft</h1>
-                    <img src="{{ asset("images/game-03.jpg") }}" alt="">
-                    <div class="game-content">
+                    <img  class="gameImg"  src="{{ asset("images/game-03.jpg") }}" alt="">
+                    <div class="game-content hidden">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis temporibus a, provident quibusdam dolorem repellat pariatur voluptatum consequatur deleniti officiis in debitis doloribus ex repellendus delectus sed eos et!
                     </div>
                 </div>
@@ -78,10 +78,10 @@
 
     <div class="col-lg-12">
             <div class="review-form">
-                <form >
+                <form name="formalarRew" onsubmit="checkIfEmpty()" >
                     <div class="form-group">
                         <label for="name">Vaše Meno</label>
-                        <input type="text" class="form-control" id="name" placeholder="Jakub" required>
+                        <input type="text" class="form-control" name="meno" id="name" placeholder="Jakub" >
                       </div>
                       <div class="form-group">
                         <label for="surname">Vaše Priezvisko</label>
@@ -94,7 +94,7 @@
 
                     <div class="form-group">
                       <label for="recenzia">Vaša recenzia</label>
-                      <textarea class="form-control" id="recenzia" rows="6" required></textarea>
+                      <textarea class="form-control" id="recenzia" rows="6" ></textarea>
                     </div>
                     <button class="send-review">
                         Send
@@ -105,20 +105,18 @@
             </div>
 
     </div>
-
-
-
-
-
-
-
+    <script>
+        function checkIfEmpty() {
+            if (document.getElementById("recenzia").value == ""){
+                document.getElementById("recenzia").style.borderColor = "red";
+                alert("Prosím napíšte vašu recenziu");
+                return false;
+            }
+        }
+    </script>
+    <script>
+        
+    </script>
 </section>
-
 </div>
-
-
-
-
-
-
 @endsection

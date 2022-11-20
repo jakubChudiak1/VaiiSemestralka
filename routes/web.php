@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ZoznamController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +24,10 @@ Route::get('/login',function(){
 Route::get("/registration",function(){
     return view("registration");
 });
-Route::get('/zoznam',function(){
-    return view("zoznam");
-});
+//Route::get('/zoznam',function(){
+  //  return view("zoznam");
+//});
+
+Route::get('zoznam',[ZoznamController::class,'index']);
+Route::get('addGame',[ZoznamController::class,'create']);
+Route::post('addGame',[ZoznamController::class,'store']);

@@ -364,8 +364,26 @@ tr:hover{
     background-color: #d63384;
     transition: 0.5s ease;
 }
-
-
-
-
+.pridaj{
+    background-color: #d63384;
+    color: white;
+    border: none;
+    float: left !important;
+    
+    
+}
+.pridaj:hover{
+    background-color: white;
+    color: #d63384;
+}
+.pridaj a{
+    text-decoration: none;
+    color: white;
+}
+.pridaj a:hover{
+    color: #d63384;
+}
+.add_games{
+    margin-bottom: 11%;
+}
 

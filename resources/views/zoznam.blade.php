@@ -6,9 +6,10 @@
         <div class="game-table-content">
             <div class="game-table-header">
                 <h1>Zoznam <span>Hier</span></h1>
+                <button class="btn btn-primary pridaj"> <a href="{{url('addGame')}}">Pridaj Hru</a> </button>
             </div>
 
-
+            
             <div class=" col-lg-12" >
             <div class="games">
                 <table class="table">

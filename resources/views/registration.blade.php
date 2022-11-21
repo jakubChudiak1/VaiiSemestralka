@@ -8,7 +8,7 @@
                 <h1>Registrácia</h1>
             </div>
             <div class="registration-form">
-                <form  >
+                <form onsubmit="checkPass()" >
                     <label for="mail">Váš Mail</label>
                     <input type="email" id="mail" placeholder="example@gmail.com">
                     <label for="pass">Vaše heslo</label>
@@ -55,5 +55,26 @@
         }
     })
 </script>
+
+<script>
+    const pass1 = document.getElementById("pass");
+    const pass2 = document.getElementById("pass-conf");
+    function checkPass() {
+        if (pass1.value != pass2.value) {
+            alert("heslo sa nezhoduje");
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+
+</script>
+
+
+
+
+
 </section>
 @endsection

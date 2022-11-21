@@ -26,7 +26,7 @@
                       <tbody>
                         @foreach ($games as $item)
                         <tr>
-                           <td><img src="{{ asset('uploads/zoznam/'.$item->image) }}" style="width: 200px"   alt="image"></td>
+                           <td><img src="{{ asset('uploads/zoznam/'.$item->image) }}" style="width: 25%"   alt="image"></td>
                           <td><p>{{$item->name}}</p> </td>
                           <td><p>{{$item->date}}</p> </td>
                           <td><p>{{$item->count}}</p> </td>
